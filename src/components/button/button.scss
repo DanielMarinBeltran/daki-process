@@ -1,0 +1,20 @@
+@import '../../assets/scss/main.scss';
+
+.button{
+  background-color: #5729C8;
+  font-family: $font-primary;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 16px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 16px;
+  gap: 8px;
+  height: 29px;
+  border-radius: 100px;
+  border: none;
+  cursor: pointer;
+  margin-left: 19px;
+}
