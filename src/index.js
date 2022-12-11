@@ -14,10 +14,7 @@ const Layout =() =>{
   return(
     <div>
       <Navbar />
-      <div >
-        {/* <Navbar /> */}
-        <Outlet />
-      </div>
+      <Outlet />
     </div>
   )
 }

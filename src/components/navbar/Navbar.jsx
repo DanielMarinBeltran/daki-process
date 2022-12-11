@@ -1,6 +1,6 @@
 import './navbar.scss';
 import React from 'react';
-import genericLogo from '../../assets/imgs/genericLogo.png';
+import genericLogo from '../../assets/imgs/genericLogo.svg';
 import shoppingCartLogo from '../../assets/imgs/shopping-cart.svg';
 import notificationsLogo from '../../assets/imgs/notifications.svg';
 import arrowDown from '../../assets/imgs/chevron.svg';

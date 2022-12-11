@@ -1,15 +1,18 @@
 @import '../../assets/scss/main.scss';
 
 .navbar{
-  height: 62px;
+  height: 29px;
   background-color: $white;
-  padding: 25px 14px;
+  padding: 16px 14px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   .left{
     width: 116px;
     height: 29px;
+    img{
+      cursor: pointer;
+    }
   }
   .right{
     display: flex;
@@ -18,9 +21,11 @@
     div:nth-child(1){
       img:nth-child(1){
         margin-right: 10px;
+        cursor: pointer;
       }
       img:nth-child(2){
         margin-right: 11px;
+        cursor: pointer;
       }
     }
     div:nth-child(3){
@@ -39,6 +44,7 @@
         height: 27px;
         border-radius: 50%;
         margin-left: 19px;
+        cursor: pointer;
       }
       p:nth-child(2){
         font-family: $font-secondary;
@@ -50,6 +56,7 @@
       }
       img{
         margin-right: 19px;
+        cursor: pointer;
       }
     }
   }
