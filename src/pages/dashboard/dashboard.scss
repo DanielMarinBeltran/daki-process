@@ -1,7 +1,119 @@
 @import '../../assets/scss/main.scss';
 
-.dashboard{
+.dashboard {
   height: 84vh;
   background-color: $dashboardBackground;
   padding: 28px 112px;
+
+  .dashboard-info {
+    h1 {
+      font-family: $font-primary;
+      font-size: 16px;
+      font-weight: 600;
+      line-height: 19px;
+      color: #000000;
+      margin-bottom: 18px;
+    }
+
+    .dashboard-data {
+      display: flex;
+
+      .left {
+        flex: 2;
+
+        .clients {
+          margin-top: 40px;
+          display: flex;
+
+          .chart {
+            flex: 1;
+            width: 219px;
+            height: 259px;
+            background-color: white;
+            box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.05);
+            border-radius: 10px;
+            padding: 27px;
+
+            h3 {
+              font-family: $font-primary;
+              font-weight: 700;
+              font-size: 12px;
+              line-height: 16px;
+            }
+
+            .chart-container {
+              // width: 152px;
+              height: 230px;
+            }
+          }
+
+          .list {
+            flex: 1;
+          }
+        }
+      }
+
+      .right {
+        flex: 1;
+        margin-left: 42px;
+        display: flex;
+
+        .list {
+          width: 176px;
+          padding: 25px 36px 0 27px;
+          height: 189px;
+          background-color: white;
+          box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.05);
+          border-radius: 10px;
+
+          h3 {
+            margin-left: 5px;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 12px;
+            line-height: 16px;
+            font-family: $font-primary;
+          }
+
+          ul {
+            list-style: none;
+            padding: 0;
+
+            li {
+              font-family: $font-primary;
+              font-style: normal;
+              font-weight: 400;
+              font-size: 12px;
+              line-height: 20px;
+              display: flex;
+              padding-bottom: 5px;
+              padding-top: 7px;
+              border-bottom: 1px solid $grey;
+
+              .icon-container {
+                width: 20px;
+                height: 20px;
+                background-color: $secondaryColor;
+                border-radius: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-right: 16px;
+              }
+
+              .list-right {
+                display: flex;
+                width: 135px;
+                justify-content: space-between;
+              }
+            }
+
+            li:nth-child(3) {
+              border: none;
+            }
+          }
+        }
+      }
+    }
+  }
 }

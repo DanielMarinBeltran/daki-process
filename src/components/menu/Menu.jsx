@@ -7,7 +7,7 @@ function Menu({items}) {
     <div className='menu'>
       {items.map(i =>{
         return(
-        <div>
+        <div key={i.id}>
           <div>
             <img src={i.icon} alt="Menu Company" />
           </div>
