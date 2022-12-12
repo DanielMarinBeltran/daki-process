@@ -9,6 +9,7 @@ import './dashboard.scss';
 import Menu from '../../components/menu/Menu';
 import BoxData from '../../components/boxData/BoxData';
 import PieChart from '../../components/pieChart/PieChart';
+import Button from '../../components/button/Button';
 
 // Images - Icons
 
@@ -111,7 +112,7 @@ function Dashboard() {
 			value: 76,
 			color: 'hsla(35, 99%, 64%)'
 		},
-    {
+		{
 			id: 'En Riesgo',
 			label: 'En Riesgo',
 			value: 80,
@@ -131,6 +132,49 @@ function Dashboard() {
 		}
 	];
 
+	const clientsData = [
+		{
+			id: 1,
+			name: 'Andrea Vasquez'
+		},
+		{
+			id: 2,
+			name: 'Stiwar Gonzales'
+		},
+		{
+			id: 3,
+			name: 'Luis Lopez'
+		},
+		{
+			id: 4,
+			name: 'Clara Zuluaga'
+		},
+		{
+			id: 5,
+			name: 'Nico'
+		},
+		{
+			id: 6,
+			name: 'Samuel Marin'
+		},
+		{
+			id: 7,
+			name: 'Allison Marin'
+		},
+		{
+			id: 8,
+			name: 'Nicol'
+		},
+		{
+			id: 9,
+			name: 'Sam'
+		},
+		{
+			id: 10,
+			name: 'Colby'
+		}
+	];
+
 	return (
 		<div className="dashboard">
 			<div>
@@ -145,10 +189,29 @@ function Dashboard() {
 							<div className="chart">
 								<div>
 									<h3>Composición de tus clientes</h3>
-									<div className='chart-container'><PieChart data={chartData}/></div>
+									<div className="chart-container">
+										<PieChart data={chartData} />
+									</div>
 								</div>
 							</div>
-							<div className="list" />
+							<div className="list">
+								<div>
+									<h3>Clientes en Riesgo</h3>
+									<ul>
+										{clientsData.map((i) => {
+											return (
+												<li id={i.id}>
+													<div className="list-right">
+														<span>{i.name}</span>
+														<img src={arrowRightIcon} alt="Right Arrow Shortcuts Company" />
+													</div>
+												</li>
+											);
+										})}
+									</ul>
+									<Button text="Crear campaña ahora" />
+								</div>
+							</div>
 						</div>
 					</div>
 					<div className="right">

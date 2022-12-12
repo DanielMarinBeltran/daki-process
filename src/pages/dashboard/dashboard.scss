@@ -24,6 +24,7 @@
         .clients {
           margin-top: 40px;
           display: flex;
+          gap: 35px;
 
           .chart {
             flex: 1;
@@ -49,6 +50,61 @@
 
           .list {
             flex: 1;
+            width: 246px;
+            height: 226px;
+            background-color: white;
+            box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.05);
+            border-radius: 10px;
+            padding: 27px;
+
+            h3 {
+              font-weight: 700;
+              font-size: 12px;
+              line-height: 16px;
+              margin-bottom: 22px;
+            }
+
+            ul {
+              list-style: none;
+              padding: 0;
+              padding-right: 10px;
+              height: 140px;
+              overflow-y: scroll;
+              margin-bottom: 18px;
+
+              li {
+                font-family: $font-primary;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 12px;
+                line-height: 20px;
+                display: flex;
+                padding-bottom: 5px;
+                padding-top: 7px;
+                border-bottom: 1px solid $grey;
+                span{
+                  margin-left: 5px;
+                }
+                .list-right {
+                  display: flex;
+                  width: 100%;
+                  justify-content: space-between;
+                  img{
+                    margin-right: 5px;
+                  }
+                }
+              }
+
+            }
+
+            button {
+              width: 100%;
+              margin-left: 0;
+
+              p {
+                margin-right: 17px;
+              }
+            }
           }
         }
       }
